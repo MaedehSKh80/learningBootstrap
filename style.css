@@ -1,0 +1,12 @@
+html {
+  font-family: pelak;
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: pelak;
+  src: url(./fonts/PelakFA-light.woff2) format("woff2"),
+    url(./fonts/PelakFA-light.woff) format("woff"),
+    url(./fonts/PelakFA-light.eot) format("embedded-opentype"),
+    url(./fonts/PelakFA-light.ttf) format("truetype");
+}
