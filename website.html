@@ -1,13 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<html dir="rtl" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb"
+      crossorigin="anonymous"
+    />
     <title>Document</title>
-</head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</body>
+  </head>
+  <body class="bg-light">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- این دیو برای کل لیاوت بندیه -->
+    <div class="container">
+      <!--اینجا هدر بالایی قرار داره -->
+      <header class="bg-info row container p-1 border">
+        <div class="col">
+          <!--ایتجا لیست لینک های هدر بالاست-->
+          <ul class="list-inline">
+            <li class="list-inline-item p-2">
+              <a href="#">تصویر کاربر</a>
+            </li>
+            <li class="list-inline-item p-2">
+              <a href="#">سبد خرید</a>
+            </li>
+            <li class="list-inline-item p-2">
+              <a href="#">ورود</a>
+            </li>
+            <li class="list-inline-item p-2">
+              <a href="#">ثبت نام</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <nav class="bg-danger row container p-4 border">
+        <div class="col">سرچ بار</div>
+        <div class="col">محصولات</div>
+        <div class="col">صفحه ی اول</div>
+        <div class="col">ارتباط با ما</div>
+      </nav>
+
+      <div class="row container border">
+        <aside class="col-12 col-sm-3 container border">ساید بار اینه</aside>
+        <div class="col container border">محصولان اینجان</div>
+      </div>
+
+      <footer class="bg-info row container border p-5">
+        بلاگ و فوتر اینجاس
+      </footer>
+    </div>
+  </body>
 </html>
