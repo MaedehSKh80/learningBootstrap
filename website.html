@@ -9,72 +9,243 @@
       integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" !important />
-    <title>shopping site</title>
+    <link rel="stylesheet" href="style.css" !important />
+
+    <title>mahi's site</title>
   </head>
-  <body class="bg-light">
+  <body
+    style="
+      background-image: linear-gradient(
+        -90deg,
+        #ada996,
+        #f2f2f2,
+        #dbdbdb,
+        #eaeaea
+      );
+    "
+  >
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!--اینجا هدر بالایی قرار داره -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #f2f2f2">
+      <div class="container-fluid">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/website.html">
+            <img
+              src="/photo/logo.png"
+              alt="Logo"
+              width="30"
+              height="24"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <a class="navbar-brand" href="/website.html">Mahi's site</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
 
-    <!-- این دیو برای کل لیاوت بندیه -->
-    <div class="container">
-      <!--اینجا هدر بالایی قرار داره -->
-      <header class="bg-info row container p-1 border">
-        <div class="col">
-          <!--ایتجا لیست لینک های هدر بالاست-->
-          <ul class="list-inline">
-            <li class="list-inline-item p-2">
-              <img
-                src="/photo/woman.jpg"
-                alt="profile"
-                style="height: 60px; border-radius: 50%"
-              />
-              <h6>کاربر عزیز</h6>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-1 mb-lg-0">
+            <li class="nav-item m-1 rounded" style="background-color: #dbdbdb">
+              <a class="nav-link" href="/website.html">خانه</a>
             </li>
-            <li class="list-inline-item p-2">
-              <a href="#">سبد خرید</a>
-            </li>
-            <li class="list-inline-item p-2">
-              <a href="/login.html">ورود</a>
-            </li>
-            <li class="list-inline-item p-2">
-              <a href="/signup.html">ثبت نام</a>
+            <li
+              class="nav-item dropdown m-1 rounded"
+              style="background-color: #dbdbdb"
+            >
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                ورود
+              </a>
+              <ul class="dropdown-menu" style="background-color: #dbdbdb">
+                <li><a class="dropdown-item" href="/login.html">ورود</a></li>
+                <li>
+                  <a class="dropdown-item" href="/signup.html">ثبت نام</a>
+                </li>
+              </ul>
             </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-1 ms-1"
+              type="search"
+              placeholder="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              جست‌وجو
+            </button>
+          </form>
         </div>
-      </header>
-
-      <nav class="bg-success row container p-4 border">
-        <div class="col">
-          <!--ایتجا لیست لینک های هدر بالاست-->
-          <ul class="list-inline">
-            <li class="list-inline-item p-2">
-              <a href="#">سرچ بار</a>
-            </li>
-            <li class="list-inline-item p-2">
-              <a href="#">محصولات</a>
-            </li>
-            <li class="list-inline-item p-2">
-              <a href="/website.html">صفحه اول</a>
-            </li>
-            <li class="list-inline-item p-2">
-              <a href="/contactus.html">ارتباط با ما</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div class="row container border">
-        <aside class="col-12 col-sm-3 container border">ساید بار اینه</aside>
-        <div class="col container border">محصولان اینجان</div>
       </div>
+    </nav>
+    <!-- این دیو برای کل لیاوت بندیه -->
+    <div class="row container">
+      <!-- این دیو برای ساید بار منوی همبرگریه -->
+      <aside class="col-12 col-sm-3 rounded">
+        <button
+          style="background-color: #eaeaea"
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+        >
+          <img
+            src="/photo/aside.png"
+            alt="aside"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>
+              <p class="d-inline-flex gap-1">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample"
+                >
+                  ارتباط‌‌با‌ما
+                </button>
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  href="#aboutus"
+                  role="button"
+                >
+                  درباره‌ی‌ما
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body" style="background-color: #f2f2f2">
+                  <p>شماره ثابت : 02144444444</p>
+                  <p class="col col-8 row mx-auto justify-content-evenly">
+                    آدرس : آدرس (به انگلیسی: Address ) یا نشانی یا آدرس پستی، مجموعه‌ای
+                    از اطلاعات است، که عمدتاً در قالبی ثابت برای بیان و نشان دادن مکان
+                    یک ساختمان، آپارتمان یا ساختاری دیگر مانند یک قطعه زمین استفاده
+                    می‌شود.
+                  </p>
+                  <p>
+                    پست الکترونیک :
+                    <a href="Maedeh.skh80@gmail.com">Maedeh.skh80@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="collapse" id="aboutus">
+                <div class="card card-body" style="background-color: #f2f2f2">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                    blanditiis ut voluptate doloribus voluptatum! Eligendi ab voluptas
+                    totam placeat rem repellat quas minima, minus, modi dolorem aliquid.
+                    Consectetur, culpa suscipit?
+                  </p>
+                </div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </aside>
 
-      <footer class="bg-info row container border p-5">
-        بلاگ و فوتر اینجاس
-      </footer>
+      <div class="col-10 container rounded" style="background-color: #eaeaea">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <a href="/sample.html" class="text-decoration-none mb-1">
+            <div class="col">
+              <div class="card h-100">
+                <img src="/photo/shoes1.jpg" class="card-img-top" alt="shoes" />
+                <div class="card-body" style="background-color: #f2f2f2">
+                  <h5 class="card-title">بهترین کفش ممکن</h5>
+                  <p class="card-text">
+                    زیره‌ی این کفش با تکنولوژی فومی فشرده‌شده ساخته شده است که
+                    به پای شما احساس نرمی و راحتی می‌دهد
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/sample.html" class="text-decoration-none mb-1">
+            <div class="col">
+              <div class="card h-100">
+                <img src="/photo/shoes2.jpg" class="card-img-top" alt="shoes" />
+                <div class="card-body" style="background-color: #f2f2f2">
+                  <h5 class="card-title">کفش شماره ی یک</h5>
+                  <p class="card-text">
+                    طراحی مناسب این کفش، از شما در هر فعالیتی حمایت می‌کند
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/sample.html" class="text-decoration-none mb-1">
+            <div class="col">
+              <div class="card h-100">
+                <img src="/photo/shoes3.jpg" class="card-img-top" alt="shoes" />
+                <div class="card-body" style="background-color: #f2f2f2">
+                  <h5 class="card-title">کفش شماره ی دو</h5>
+                  <p class="card-text">
+                    کفش ورزشی زنانه “آرتیکا فلکس” با طراحی مدرن و راحتی بی‌نظیر،
+                    انتخابی عالی برای فعالیت‌های ورزشی و روزمره است. این کفش
+                    دارای ویژگی‌های زیر است
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="/sample.html" class="text-decoration-none mb-1">
+            <div class="col">
+              <div class="card h-100">
+                <img src="/photo/shoes4.jpg" class="card-img-top" alt="shoes" />
+                <div class="card-body" style="background-color: #f2f2f2">
+                  <h5 class="card-title">کفش شماره ی سه</h5>
+                  <p class="card-text">
+                    طراحی مدرن و جذاب این کفش، شما را در هر مکانی به چشم می‌آورد
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
+
+    <footer class="footer footer-expand-lg" style="background-color: #ada996">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores qui
+        atque distinctio totam asperiores praesentium voluptates illo facere sed
+        modi, minus laudantium sint. Ullam aut voluptas labore enim amet optio.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium
+        sunt sapiente odio iste ad voluptates similique magni. Delectus nam,
+        necessitatibus ea fugiat saepe quibusdam labore suscipit ipsam
+        consequatur quae voluptatem?
+      </p>
+    </footer>
   </body>
 </html>
