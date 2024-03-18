@@ -24,11 +24,6 @@
       );
     "
   >
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
     <!--اینجا هدر بالایی قرار داره -->
     <nav class="navbar navbar-expand-lg" style="background-color: #f2f2f2">
       <div class="container-fluid">
@@ -121,7 +116,7 @@
       </div>
     </nav>
     <!-- این دیو برای کل لیاوت بندیه -->
-    <div class="row container">
+    <div class="container-fluid">
       <!-- این دیو برای ساید بار منوی همبرگریه -->
       <aside class="col-12 col-sm-3 rounded">
         <button
@@ -201,14 +196,17 @@
           </div>
         </div>
       </aside>
-
-      <div class="col-10 container rounded" style="background-color: #eaeaea">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <a href="/sample.html" class="text-decoration-none mb-1">
+      <!-- محصولات -->
+      <div
+        class="col-12 container rounded p-4 shadow"
+        style="background-color: #eaeaea"
+      >
+        <div class="row row-cols-md-2 p-2 m-2">
+          <a href="/sample.html" class="text-decoration-none mb-3">
             <div class="col">
-              <div class="card h-100">
+              <div class="card">
                 <img src="/photo/shoes1.jpg" class="card-img-top" alt="shoes" />
-                <div class="card-body" style="background-color: #f2f2f2">
+                <div class="card-body">
                   <h5 class="card-title">بهترین کفش ممکن</h5>
                   <p class="card-text">
                     زیره‌ی این کفش با تکنولوژی فومی فشرده‌شده ساخته شده است که
@@ -218,11 +216,11 @@
               </div>
             </div>
           </a>
-          <a href="/sample.html" class="text-decoration-none mb-1">
+          <a href="/sample.html" class="text-decoration-none mb-3">
             <div class="col">
-              <div class="card h-100">
+              <div class="card">
                 <img src="/photo/shoes2.jpg" class="card-img-top" alt="shoes" />
-                <div class="card-body" style="background-color: #f2f2f2">
+                <div class="card-body">
                   <h5 class="card-title">کفش شماره ی یک</h5>
                   <p class="card-text">
                     طراحی مناسب این کفش، از شما در هر فعالیتی حمایت می‌کند
@@ -231,11 +229,11 @@
               </div>
             </div>
           </a>
-          <a href="/sample.html" class="text-decoration-none mb-1">
+          <a href="/sample.html" class="text-decoration-none mb-3">
             <div class="col">
-              <div class="card h-100">
+              <div class="card">
                 <img src="/photo/shoes3.jpg" class="card-img-top" alt="shoes" />
-                <div class="card-body" style="background-color: #f2f2f2">
+                <div class="card-body">
                   <h5 class="card-title">کفش شماره ی دو</h5>
                   <p class="card-text">
                     کفش ورزشی زنانه “آرتیکا فلکس” با طراحی مدرن و راحتی بی‌نظیر،
@@ -246,11 +244,11 @@
               </div>
             </div>
           </a>
-          <a href="/sample.html" class="text-decoration-none mb-1">
+          <a href="/sample.html" class="text-decoration-none mb-3">
             <div class="col">
-              <div class="card h-100">
+              <div class="card">
                 <img src="/photo/shoes4.jpg" class="card-img-top" alt="shoes" />
-                <div class="card-body" style="background-color: #f2f2f2">
+                <div class="card-body">
                   <h5 class="card-title">کفش شماره ی سه</h5>
                   <p class="card-text">
                     طراحی مدرن و جذاب این کفش، شما را در هر مکانی به چشم می‌آورد
@@ -261,6 +259,39 @@
           </a>
         </div>
       </div>
+    </div>
+    <!-- shoebar -->
+    <div class="container row m-3 justify-content-evenly">
+      <img
+        class="col-sm-5 col-lg-3 mb-2 ms-1 rounded-circle border border-light"
+        src="photo/shoes bar/1.jpg"
+        alt="bread"
+      />
+      <img
+        class="col-sm-5 col-lg-3 mb-2 ms-1 rounded-circle border border-light"
+        src="photo/shoes bar/2.jpg"
+        alt="bread"
+      />
+      <img
+        class="col-sm-5 col-lg-3 mb-2 ms-1 rounded-circle border border-light"
+        src="photo/shoes bar/4.jpg"
+        alt="bread"
+      />
+      <img
+        class="col-sm-5 col-lg-3 mb-2 ms-1 rounded-circle border border-light"
+        src="photo/shoes bar/5.jpg"
+        alt="bread"
+      />
+      <img
+        class="col-sm-5 col-lg-3 mb-2 ms-1 rounded-circle border border-light"
+        src="photo/shoes bar/6.jpg"
+        alt="bread"
+      />
+      <img
+        class="col-sm-5 col-lg-3 mb-2 ms-1 rounded-circle border border-light"
+        src="photo/shoes bar/7.jpg"
+        alt="bread"
+      />
     </div>
 
     <footer class="footer footer-expand-lg" style="background-color: #ada996">
@@ -274,5 +305,11 @@
         consequatur quae voluptatem?
       </p>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

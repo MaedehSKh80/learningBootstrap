@@ -29,10 +29,13 @@
       crossorigin="anonymous"
     ></script>
 
-      <!--اینجا هدر بالایی قرار داره -->
-      <nav class="navbar navbar-expand-lg" style="background-color: #f2f2f2">
-        <div class="container-fluid">
+    <!--اینجا هدر بالایی قرار داره -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #f2f2f2">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- logo and identity  -->
           <div class="container-fluid">
+            <!-- image of logo -->
             <a class="navbar-brand" href="/website.html">
               <img
                 src="/photo/logo.png"
@@ -54,6 +57,7 @@
           </div>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- navbar list -->
             <ul class="navbar-nav me-auto mb-1 mb-lg-0">
               <li
                 class="nav-item m-1 rounded"
@@ -61,6 +65,24 @@
               >
                 <a class="nav-link" href="/website.html">خانه</a>
               </li>
+              <li
+                class="nav-item m-1 rounded"
+                style="background-color: #dbdbdb"
+              >
+                <button
+                  class="nav-link btn position-relative"
+                  type="button"
+                  href="#"
+                >
+                  سبد خرید
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"
+                  >
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </button>
+              </li>
+              <!-- login or signup dropdown -->
               <li
                 class="nav-item dropdown m-1 rounded"
                 style="background-color: #dbdbdb"
@@ -80,20 +102,105 @@
                   </li>
                 </ul>
               </li>
+              <!-- searchbar -->
+              <li class="nav-item m-1">
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-1 ms-1"
+                    type="search"
+                    placeholder="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    جست‌وجو
+                  </button>
+                </form>
+              </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-1 ms-1"
-                type="search"
-                placeholder="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                جست‌وجو
-              </button>
-            </form>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
+    <!-- این دیو برای کل لیاوت بندیه -->
+    <div class="container-fluid">
+      <!-- این دیو برای ساید بار منوی همبرگریه -->
+      <aside class="col-12 col-sm-3 rounded">
+        <button
+          style="background-color: #eaeaea"
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasWithBothOptions"
+        >
+          <img
+            src="/photo/aside.png"
+            alt="aside"
+            alt="Logo"
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="true"
+          tabindex="-1"
+          id="offcanvasWithBothOptions"
+        >
+          <div class="offcanvas-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <p class="d-inline-flex gap-1">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+              >
+                ارتباط‌‌با‌ما
+              </button>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="collapse"
+                href="#aboutus"
+                role="button"
+              >
+                درباره‌ی‌ما
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body" style="background-color: #f2f2f2">
+                <p>شماره ثابت : 02144444444</p>
+                <p class="col col-8 row mx-auto justify-content-evenly">
+                  آدرس : آدرس (به انگلیسی: Address ) یا نشانی یا آدرس پستی،
+                  مجموعه‌ای از اطلاعات است، که عمدتاً در قالبی ثابت برای بیان و
+                  نشان دادن مکان یک ساختمان، آپارتمان یا ساختاری دیگر مانند یک
+                  قطعه زمین استفاده می‌شود.
+                </p>
+                <p>
+                  پست الکترونیک :
+                  <a href="Maedeh.skh80@gmail.com">Maedeh.skh80@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="collapse" id="aboutus">
+              <div class="card card-body" style="background-color: #f2f2f2">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime blanditiis ut voluptate doloribus voluptatum! Eligendi
+                  ab voluptas totam placeat rem repellat quas minima, minus,
+                  modi dolorem aliquid. Consectetur, culpa suscipit?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
       <!-- sign up form-->
       <form action="#" class="col-lg-6 offset-md-3 p-5 justify-content-center">
         <!-- input email address -->
